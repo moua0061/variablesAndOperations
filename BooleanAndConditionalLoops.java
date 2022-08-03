@@ -70,6 +70,25 @@ public class BooleanAndConditionalLoops {
 
         // create a variable called loyaltyMemberStatus and assign the value "SILVER"
         // create a variable called loyaltyMemberDiscount and assign the value 0.0
+        // using switch, set the value of loyaltyMemberDiscount based on the following
+        // loyaltyMemeberStatus scale:
+        // Silver is 0.10, GOLD is 0.15, PLATINUM is 0.25
+
+        // create a variable called billTotal and assign a value
+        // create a variable called adjustedTotal and assign it the billTotal minus the
+        // loyaltyMemberDiscount percent of the billTotal
+        // if the adjustedBillTotal is greater than $500, upgrade the
+        // loyaltyMemberStatus from SILVER to GOLD or GOLD to PLATINUM
+        // otherwise, print "access denied"
+
+        // write a for loop that prints each member from 0 to 9
+        // write a for loop that prints each member from 10 to 0 backwards
+        // write a for loop that prints every other member from 0 to 100
+        // write a for loop that iterates from 0 to 100 and prints "even" if the number
+        // is even and "Odd" if it's odd
+        // write a for loop that starts at 100 and iterates backwards by 1 until it
+        // reaches 0
+        // divide each number by 1 and print the remainder to the console
 
     }
 }
