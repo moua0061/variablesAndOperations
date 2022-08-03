@@ -10,7 +10,7 @@ public class JAVA02 {
         double costOfGroceriesAtCheckout = 1.00;
 
         // create a variable to hold a person's middle initial
-        String middileInitial = "L";
+        String middleInitial = "L";
 
         // create a variable to hold true if its hot outside and false if it's cold
         // outside
@@ -24,7 +24,7 @@ public class JAVA02 {
         String address = "1234 Main Street";
 
         // print all variables to the console
-        System.out.print(seatsLeft + " " + costOfGroceriesAtCheckout + " " + middileInitial + " " + hotOutside + " "
+        System.out.print(seatsLeft + " " + costOfGroceriesAtCheckout + " " + middleInitial + " " + hotOutside + " "
                 + coldOutside
                 + " " + firstName + " " + address);
 
@@ -38,7 +38,7 @@ public class JAVA02 {
 
         // birth certificate was printed incorrectly, change the middle initial to
         // something else
-        middileInitial = "R";
+        middleInitial = "R";
 
         // the season has changed, update the hot outside variable to be opposite of
         // what it was
