@@ -51,16 +51,17 @@ public class BooleanAndConditionalLoops {
         // if there are 5 or more cookies, print "jackpot!"
         int numberOfCookies = 2;
         int numberOfChildren = 3;
-        System.out.println(numberOfCookies & numberOfChildren);
+        int remainingCookies = numberOfCookies % numberOfChildren;
+        System.out.println(numberOfCookies % numberOfChildren);
 
-        if (numberOfCookies % numberOfChildren > 0) {
-            System.out.println("yes");
-        } else if (numberOfCookies % numberOfChildren >= 2) {
-            System.out.println("whooohooo!");
-        } else if (numberOfCookies % numberOfChildren >= 5) {
-            System.out.println("jackpot!");
-        } else {
+        if (remainingCookies == 0) {
             System.out.println("sad face");
+        } else if (remainingCookies < 2) {
+            System.out.println("yes");
+        } else if (remainingCookies < 5) {
+            System.out.println("whoohooo");
+        } else {
+            System.out.println("jackpot");
         }
 
         // switch(numberOfCookies > 0){
