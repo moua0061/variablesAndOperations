@@ -24,9 +24,9 @@ public class JAVA02 {
         String address = "1234 Main Street";
 
         // print all variables to the console
-        System.out.print(seatsLeft + " " + costOfGroceriesAtCheckout + " " + middleInitial + " " + hotOutside + " "
-                + coldOutside
-                + " " + firstName + " " + address);
+        // System.out.print(seatsLeft + " " + costOfGroceriesAtCheckout + " " +
+        // middleInitial + " " + hotOutside + " " + coldOutside + " " + firstName + " "
+        // + address);
 
         // customer booked 2 plane seats, remove 2 seats from the available seats
         // variable
@@ -43,5 +43,13 @@ public class JAVA02 {
         // the season has changed, update the hot outside variable to be opposite of
         // what it was
         hotOutside = !hotOutside;
+
+        // create a new variable called full name using the customer's first name,
+        // middle initial and last name of your choice
+        String fullName = firstName + " " + middleInitial + " " + "testing1";
+
+        // print a line to the console that introduces the customer and says they live
+        // at the address variable
+        System.out.println(fullName + " lives at " + address);
     }
 }
