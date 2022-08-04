@@ -90,20 +90,30 @@ public class BooleanAndConditionalLoops {
         // loyaltyMemberDiscount percent of the billTotal
         // if the adjustedBillTotal is greater than $500, upgrade the
         // loyaltyMemberStatus from SILVER to GOLD or GOLD to PLATINUM
-        // otherwise, print "access denied"
-        double billTotal = 2000.01;
-        double adjustedTotal = billTotal - (loyaltyMemberDiscount * billTotal);
 
-        if (adjustedTotal > 500.00) {
+        double billTotal = 2000.01;
+        double adjustedTotal = billTotal - loyaltyMemberDiscount * billTotal;
+
+        if (adjustedTotal > 500) {
             if (loyaltyMemberStatus == "SILVER") {
                 loyaltyMemberStatus = "GOLD";
             } else if (loyaltyMemberStatus == "GOLD") {
                 loyaltyMemberStatus = "PLATINUM";
             }
-        } else {
-            System.out.print("access denied");
         }
-        System.out.println(loyaltyMemberStatus + " " + adjustedTotal);
+        // System.out.println(loyaltyMemberStatus + " " + adjustedTotal);
+
+        // create 2 variables; username & password
+        // create a conditional that prints "login successful" if the username is
+        // Tommy123 and the password is "12345"
+        // else print "access denied"
+        String username = "testing";
+        String password = "12";
+        if (username == "Tommy123" && password == "12345") {
+            System.out.println("login successful");
+        } else {
+            System.out.println("access denied");
+        }
 
         // write a for loop that prints each member from 0 to 9
         // write a for loop that prints each member from 10 to 0 backwards
@@ -113,6 +123,17 @@ public class BooleanAndConditionalLoops {
         // write a for loop that starts at 100 and iterates backwards by 1 until it
         // reaches 0
         // divide each number by 1 and print the remainder to the console
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
+
+        for (int j = 10; j >= 0; j--) {
+            System.out.println(j);
+        }
+
+        for (int k = 0; k <= 100; k++) {
+
+        }
 
     }
 }
