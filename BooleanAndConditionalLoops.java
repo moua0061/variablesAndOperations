@@ -110,30 +110,40 @@ public class BooleanAndConditionalLoops {
         String username = "testing";
         String password = "12";
         if (username == "Tommy123" && password == "12345") {
-            System.out.println("login successful");
+            // System.out.println("login successful");
         } else {
-            System.out.println("access denied");
+            // System.out.println("access denied");
         }
 
         // write a for loop that prints each member from 0 to 9
+        for (int i = 0; i < 10; i++) {
+            // System.out.println(i);
+        }
+
         // write a for loop that prints each member from 10 to 0 backwards
+        for (int j = 10; j >= 0; j--) {
+            // System.out.println(j);
+        }
+
         // write a for loop that prints every other member from 0 to 100
+        for (int k = 0; k <= 100; k += 2) {
+            // System.out.println(k);
+        }
+
         // write a for loop that iterates from 0 to 100 and prints "even" if the number
         // is even and "Odd" if it's odd
+        for (int l = 0; l <= 100; l++) {
+            if (l % 2 == 0) {
+                // System.out.println("even");
+            } else {
+                // System.out.println("odd");
+            }
+        }
         // write a for loop that starts at 100 and iterates backwards by 1 until it
         // reaches 0
-        // divide each number by 1 and print the remainder to the console
-        for (int i = 0; i < 10; i++) {
-            System.out.println(i);
+        // divide each number by 3 and print the remainder to the console
+        for (int m = 100; m >= 0; m--) {
+            System.out.println(m % 3);
         }
-
-        for (int j = 10; j >= 0; j--) {
-            System.out.println(j);
-        }
-
-        for (int k = 0; k <= 100; k++) {
-
-        }
-
     }
 }
