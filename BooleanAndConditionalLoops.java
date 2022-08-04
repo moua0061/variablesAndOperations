@@ -5,10 +5,10 @@ public class BooleanAndConditionalLoops {
         int age = 14;
 
         // print the boolean expression age >= 16 to the console and note the results
-        System.out.println(age >= 16);
+        // System.out.println(age >= 16);
         // change the value of age to 18 and run again
         age = 18;
-        System.out.println(age >= 16);
+        // System.out.println(age >= 16);
 
         // using a conditional, print "you can drive" if age is greater than or equal to
         // 16
@@ -16,9 +16,9 @@ public class BooleanAndConditionalLoops {
         age = 16;
         boolean haslicense = false;
         if (age >= 16 && haslicense) {
-            System.out.println("you can drive");
+            // System.out.println("you can drive");
         } else {
-            System.out.println("you cannot drive");
+            // System.out.println("you cannot drive");
         }
         // change the value of age and rerun to see the result
 
@@ -35,9 +35,9 @@ public class BooleanAndConditionalLoops {
         // or if thirstLevel is greater than 6 and prints "no thanks" otherwise
         // change the values and note the different results
         if (costOfMilk < 2.50 || thirstLevel > 6) {
-            System.out.println("milk please");
+            // System.out.println("milk please");
         } else {
-            System.out.println("no thanks");
+            // System.out.println("no thanks");
         }
 
         // create 2 variables called numberofcookies and numberofchildren
@@ -83,7 +83,7 @@ public class BooleanAndConditionalLoops {
                 loyaltyMemberDiscount = 0.25;
                 break;
         }
-        System.out.println(loyaltyMemberDiscount);
+        // System.out.println(loyaltyMemberDiscount);
 
         // create a variable called billTotal and assign a value
         // create a variable called adjustedTotal and assign it the billTotal minus the
@@ -91,6 +91,19 @@ public class BooleanAndConditionalLoops {
         // if the adjustedBillTotal is greater than $500, upgrade the
         // loyaltyMemberStatus from SILVER to GOLD or GOLD to PLATINUM
         // otherwise, print "access denied"
+        double billTotal = 2000.01;
+        double adjustedTotal = billTotal - (loyaltyMemberDiscount * billTotal);
+
+        if (adjustedTotal > 500.00) {
+            if (loyaltyMemberStatus == "SILVER") {
+                loyaltyMemberStatus = "GOLD";
+            } else if (loyaltyMemberStatus == "GOLD") {
+                loyaltyMemberStatus = "PLATINUM";
+            }
+        } else {
+            System.out.print("access denied");
+        }
+        System.out.println(loyaltyMemberStatus + " " + adjustedTotal);
 
         // write a for loop that prints each member from 0 to 9
         // write a for loop that prints each member from 10 to 0 backwards
