@@ -64,15 +64,26 @@ public class BooleanAndConditionalLoops {
             System.out.println("jackpot");
         }
 
-        // switch(numberOfCookies > 0){
-
-        // }
-
         // create a variable called loyaltyMemberStatus and assign the value "SILVER"
         // create a variable called loyaltyMemberDiscount and assign the value 0.0
         // using switch, set the value of loyaltyMemberDiscount based on the following
         // loyaltyMemeberStatus scale:
         // Silver is 0.10, GOLD is 0.15, PLATINUM is 0.25
+        String loyaltyMemberStatus = "SILVER";
+        double loyaltyMemberDiscount = 0.0;
+
+        switch (loyaltyMemberStatus) {
+            case "SILVER":
+                loyaltyMemberDiscount = 0.10;
+                break;
+            case "GOLD":
+                loyaltyMemberDiscount = 0.15;
+                break;
+            case "PLATINUM":
+                loyaltyMemberDiscount = 0.25;
+                break;
+        }
+        System.out.println(loyaltyMemberDiscount);
 
         // create a variable called billTotal and assign a value
         // create a variable called adjustedTotal and assign it the billTotal minus the
