@@ -52,7 +52,7 @@ public class BooleanAndConditionalLoops {
         int numberOfCookies = 2;
         int numberOfChildren = 3;
         int remainingCookies = numberOfCookies % numberOfChildren;
-        System.out.println(numberOfCookies % numberOfChildren);
+        System.out.println(remainingCookies);
 
         if (remainingCookies == 0) {
             System.out.println("sad face");
