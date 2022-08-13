@@ -184,8 +184,8 @@ public class ArraysAndMethods {
 
     public static boolean isPalindrome(String str) {
         int pointer1 = 0;
-        int pointer2 = str.length();
-        while (pointer1 > pointer2) {
+        int pointer2 = str.length() - 1;
+        while (pointer1 < pointer2) {
             if (str.charAt(pointer1) == str.charAt(pointer2)) {
                 pointer1++;
                 pointer2--;
@@ -193,7 +193,6 @@ public class ArraysAndMethods {
             } else {
                 return false;
             }
-
         }
         return true;
     }
