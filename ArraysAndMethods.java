@@ -72,5 +72,25 @@ public class ArraysAndMethods {
         // write and test a method that takes a string name and prints out a greeting,
         // this method returns nothing
 
+        // write and test a method that takes a string name and returns a greeting, do
+        // not print in the method
+
+        // analyze the difference between these 2 methods - what do you find? how are
+        // they different?
+
+        // write and test a method that takes a string and an int and returns true if
+        // the num of letters in the string is greater than the int
+
+        // write and test a method that takes an array of string and a string and
+        // returns true if the string passed in exists in the array
+
+        // write and test a method that takes an array of int and returns the smallest
+        // number in the array
+
+        // write and test a method that takes an array of double and returns the average
+
+        // write and test a method that takes an array of strings and returns an array
+        // of int where each element
+
     }
 }
