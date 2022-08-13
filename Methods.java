@@ -18,7 +18,7 @@ public class Methods {
         numbers2[4] = 4.11;
         // System.out.println(averageOfNums(numbers2));
 
-        System.out.println(magicWithNumAndString("hello", 3));
+        System.out.println(magicWithNumAndString("hello ", 3));
     }
 
     // takes an array of ints and returns the sum of all ints
@@ -44,10 +44,10 @@ public class Methods {
 
     // takes a string and an int and returns the string concatenated with itself int
     // number of times
-    public static String magicWithNumAndString(String aString, int anInt) {
-        String resultString = aString;
-        for (int i = 1; i < anInt; i++) {
-            resultString = aString + " ";
+    public static String magicWithNumAndString(String aString, int num) {
+        String resultString = "";
+        for (int i = 1; i <= num; i++) {
+            resultString += aString;
         }
         return resultString;
     }
