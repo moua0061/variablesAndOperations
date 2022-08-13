@@ -128,12 +128,12 @@ public class ArraysAndMethods {
         return "hello " + name + " !";
     }
 
-    public static Boolean isNumOfLettersGreaterThanInt(String str, int num) {
+    public static boolean isNumOfLettersGreaterThanInt(String str, int num) {
         // System.out.println(str.length());
         return str.length() > num;
     }
 
-    public static Boolean isWordInTheArray(String[] arr, String theWord) {
+    public static boolean isWordInTheArray(String[] arr, String theWord) {
         for (String word : arr) {
             if (word.equals(theWord)) {
                 return true;
@@ -153,7 +153,7 @@ public class ArraysAndMethods {
         return smallest;
     }
 
-    public static Double averageDouble(double[] arr) {
+    public static double averageDouble(double[] arr) {
         double average = 0;
         for (Double num : arr) {
             average += num;
@@ -169,7 +169,7 @@ public class ArraysAndMethods {
         return resultsArr;
     }
 
-    public static Boolean isSumOfEvenLettersGreaterThanSumOfOddLetters(String[] arr) {
+    public static boolean isSumOfEvenLettersGreaterThanSumOfOddLetters(String[] arr) {
         int sumOfEvenLetters = 0;
         int sumOfOddLetters = 0;
         for (String word : arr) {
@@ -182,16 +182,19 @@ public class ArraysAndMethods {
         return sumOfEvenLetters > sumOfOddLetters;
     }
 
-    public static Boolean isPalindrome(String str) {
+    public static boolean isPalindrome(String str) {
         int pointer1 = 0;
         int pointer2 = str.length();
         while (pointer1 > pointer2) {
             if (str.charAt(pointer1) == str.charAt(pointer2)) {
                 pointer1++;
                 pointer2--;
+                // keep going
+            } else {
+                return false;
             }
-            return true;
+
         }
-        return false;
+        return true;
     }
 }
