@@ -12,6 +12,7 @@ public class DifferentCollections {
         // collections: list, set, map
 
         // List: allows duplicates
+        // [robb, robb, steve, null]
         // keeps it in order by index
         // can add null to value
         // common implementations: ArrayList, LinkedList, Vector
@@ -24,6 +25,7 @@ public class DifferentCollections {
 
         // Set: does not allow duplicates = a map is a dictionary
         // unordered
+        // [minnesota, michigan, alaska, california]
         // does allow null value
         // common implementations: HashSet, LinkedHashSet, TreeSet
         Set<String> states = new HashSet<String>();
@@ -41,6 +43,8 @@ public class DifferentCollections {
         }
 
         // Map = Map<K, V> where K is the key and V is the value
+        // {1=billy, 2=billy idol, 3=billie ellish}
+        // {instructor=ms peach, sign=capricorn, location=miami beach}
         // has key/value pairs dictionary
         // values can be duplicated but NOT KEYS
         // key : value
