@@ -7,6 +7,8 @@ public class StringAndStringBuilder {
 
         System.out.println(testing);
         System.out.println(testing.charAt(3));
+        testing.deleteCharAt(2);
+        System.out.println(testing);
 
     }
 }
