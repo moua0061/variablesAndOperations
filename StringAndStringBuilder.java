@@ -1,6 +1,8 @@
 public class StringAndStringBuilder {
 
     public static void main(String[] args) {
+        // use a string object when you want it to be constant, without manipulating it
+        // use a string builder when you want it to be dynamic such as below:
 
         StringBuilder testing = new StringBuilder("hello");
         testing.append(" world");
