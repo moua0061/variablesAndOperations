@@ -34,9 +34,12 @@ public class MapApp {
         String phoneNumber = scan.next();
 
         // .remove() returns the value that was removed
-        phoneBook.remove(phoneNumber);
-
-        System.out.println("removed phone number: " + phoneNumber);
+        String phoneNumberToDelete = phoneBook.remove(phoneNumber);
+        if (phoneNumberToDelete == null) {
+            System.out.println("please enter a valid phone number that exists");
+        } else {
+            System.out.println("removed phone number: " + phoneNumber);
+        }
     }
 
     public static void addContact() {
@@ -75,6 +78,7 @@ public class MapApp {
         System.out.println("1) display phone book");
         System.out.println("2) add new contact");
         System.out.println("3) delete contact");
+        System.out.println("4) exit");
         System.out.println("-----------------------------");
     }
 }
