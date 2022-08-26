@@ -27,8 +27,41 @@ public class MapApp {
 
     }
 
+    public static void deleteContact() {
+        // we want to delete by the key
+        // therefore the key has to match
+        System.out.println("enter phone number to delete: ");
+        String phoneNumber = scan.next();
+
+        // .remove() returns the value that was removed
+        phoneBook.remove(phoneNumber);
+
+        System.out.println("removed phone number: " + phoneNumber);
+    }
+
+    public static void addContact() {
+        // have user enter phone number for the key
+        System.out.println("enter phone number: ");
+        String phoneNumber = scan.next();
+
+        // have user enter the name for the value
+        System.out.println("enter name");
+        String name = scan.next();
+
+        // now add it to our phone book hashmap above using the .put() method
+        // this method is the same as adding
+        phoneBook.put(phoneNumber, name);
+        System.out.println("added" + phoneNumber + " " + name);
+    }
+
+    // key = phone numbers
+    // value = name
+    // "123-123-1234": "Testing"
     public static void displayPhoneBook() {
-        Set<String> phoneNumbers = phoneBook.keySet();
+        Set<String> phoneNumbers = phoneBook.keySet(); // all of our keys
+
+        // with our keys, we need to grab all of our values:
+        // for each key, i want to grab each value
         for (String phoneNumber : phoneNumbers) {
             System.out.println(phoneNumber + " " + phoneBook.get(phoneNumber));
         }
