@@ -10,4 +10,6 @@ public interface Interface {
     public void error(String error);
 
     public void fatal(String fatal);
+
+    public void close();
 }

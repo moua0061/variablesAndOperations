@@ -30,4 +30,9 @@ public class ConsoleLogger implements Interface {
 
     }
 
+    @Override
+    public void close() {
+
+    }
+
 }

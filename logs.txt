@@ -1,0 +1,4 @@
+info: Sun Aug 28 19:47:01 EDT 2022 hello
+warning: Sun Aug 28 19:47:01 EDT 2022 this is a warning
+error: Sun Aug 28 19:47:01 EDT 2022 this is an error
+fatal: Sun Aug 28 19:47:01 EDT 2022 this is fatal
