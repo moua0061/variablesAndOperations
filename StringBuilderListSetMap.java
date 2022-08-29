@@ -32,11 +32,12 @@ public class StringBuilderListSetMap {
         listOfStrings.add("redd ma");
         System.out.println(listOfStrings);
         // or
-        List<String> listOfStrings2 = Arrays.asList("t", "te", "tes", "test", "testing");
+        List<String> listOfStrings2 = Arrays.asList("tt", "te", "tes", "test", "testing", "t");
         System.out.println(listOfStrings2);
 
         // write and test a method that takes a list of strings & returns the shortest
         // string
+        System.out.println(getShortestString(listOfStrings2));
 
         // write and test a method that takes a list of strings and returns the list
         // with the first and last element switched
@@ -49,7 +50,27 @@ public class StringBuilderListSetMap {
         // string parameter (like the search method)
 
         // write and test a method that takes a list of integers and returns a
-        // list<list<integer>> where the first list in the returned value
+        // list<list<integer>> where the first list in the returned value contains any
+        // number from the input list that is divisible by 2, the second list contains
+        // values from the input list that are divisible by 3, and the third divisible
+        // by 5, and the fourth all numbers from that input list not divisible by 2,3 or
+        // 5
 
+        // write and test a method that takes a list of strings and return a list of
+        // integers that contains the length of each string
+
+        // create a set of strings and add 5 values
+
+    }
+
+    public static String getShortestString(List<String> arrayOfStrings) {
+        String shortestString = arrayOfStrings.get(0);
+
+        for (String string : arrayOfStrings) {
+            if (string.length() < shortestString.length()) {
+                shortestString = string;
+            }
+        }
+        return shortestString;
     }
 }
