@@ -50,6 +50,9 @@ public class StringBuilderListSetMap {
         // write and test a method that takes a list of strings and a string and returns
         // a new list with all strings from the original list containing the second
         // string parameter (like the search method)
+        List<String> listOfStrings3 = Arrays.asList("red robin", "redd car", "reed grass", "red color", "reedd",
+                "blue red");
+        System.out.println(searchingForAstring(listOfStrings3, "red"));
 
         // write and test a method that takes a list of integers and returns a
         // list<list<integer>> where the first list in the returned value contains any
@@ -63,6 +66,18 @@ public class StringBuilderListSetMap {
 
         // create a set of strings and add 5 values
 
+    }
+
+    public static List<String> searchingForAstring(List<String> list, String theWord) {
+        List<String> results = new ArrayList<String>();
+        for (String string : list) {
+            if (string.contains(theWord)) {
+                // .equals() is different than .contains()
+                // better usage of contains() than equals()
+                results.add(string);
+            }
+        }
+        return results;
     }
 
     public static String combinedStrings(List<String> list) {
