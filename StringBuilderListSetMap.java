@@ -41,9 +41,11 @@ public class StringBuilderListSetMap {
 
         // write and test a method that takes a list of strings and returns the list
         // with the first and last element switched
+        System.out.println(switchFirstAndLastElement(listOfStrings));
 
         // write and test a method that takes a list of strings and returns a string
         // with all the list elements concatenated to each other, separated by a coma
+        System.out.println(combinedStrings(listOfStrings2));
 
         // write and test a method that takes a list of strings and a string and returns
         // a new list with all strings from the original list containing the second
@@ -61,6 +63,23 @@ public class StringBuilderListSetMap {
 
         // create a set of strings and add 5 values
 
+    }
+
+    public static String combinedStrings(List<String> list) {
+        StringBuilder newString = new StringBuilder();
+        for (String string : list) {
+            newString.append(string + ", ");
+        }
+        return newString.toString();
+    }
+
+    public static List<String> switchFirstAndLastElement(List<String> listOfStrings) {
+        String temp = listOfStrings.get(0);
+        int lastElement = listOfStrings.size() - 1;
+        listOfStrings.set(0, listOfStrings.get(lastElement));
+        listOfStrings.set(lastElement, temp);
+
+        return listOfStrings;
     }
 
     public static String getShortestString(List<String> arrayOfStrings) {
